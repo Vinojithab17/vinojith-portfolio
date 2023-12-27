@@ -116,7 +116,7 @@ export const Home = () => {
         // buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Roster Scheduler',
           textures: [
             {
               srcSet: [Roster, Roster],
@@ -153,7 +153,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [sliceTexture, AirSig],
+              srcSet: [AirSig, AirSig],
               placeholder: sliceTexturePlaceholder,
             },
           ],
