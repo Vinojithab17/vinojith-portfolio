@@ -17,8 +17,10 @@ import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
+import AirSig from 'assets/AirSig.png';
+import RowAndColumnSpacing from './Grid';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Developer', 'UoM', 'Engineer'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,8 +70,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
+        title="Undergraduate Developer"
+        description="Design portfolio of VINOJITH GUNARATNE — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
       <Intro
@@ -83,16 +85,17 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="In-Air Signature"
+        description="Developing an innovative in-air signature authentication system addressing
+        Intermittent Spatial Segmentation challenges (Handling Non-continuous signatures)"
+        // buttonText="View project"
+        // buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sprTexture, sprTextureLarge],
+              srcSet: [sprTexture, AirSig],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -104,24 +107,35 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Roster Scheduler"
+        description="Shift scheduler for the doctors in a specific ward, the shifts will be decided using
+        constraints satisfaction problem."
+        // buttonText="View website"
+        // buttonLink="https://gamestack.hamishw.com"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [sprTexture, AirSig],
+              placeholder: sprTexturePlaceholder,
             },
           ],
         }}
+        // model={{
+        //   type: 'phone',
+        //   alt: 'App login screen',
+        //   textures: [
+        //     {
+        //       srcSet: [gamestackTexture, gamestackTextureLarge],
+        //       placeholder: gamestackTexturePlaceholder,
+        //     },
+        //     {
+        //       srcSet: [gamestackTexture2, gamestackTexture2Large],
+        //       placeholder: gamestackTexture2Placeholder,
+        //     },
+        //   ],
+        // }}
       />
       <ProjectSummary
         id="project-3"
@@ -148,6 +162,7 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
+      <RowAndColumnSpacing />
       <Footer />
     </div>
   );

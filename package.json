@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
+  "description": "Portfolio site for VINOJITH GUNARATNE",
   "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams <hello@hamishw.com>",
+  "author": "VINOJITH GUNARATNE <hello@hamishw.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
@@ -37,11 +37,21 @@
     "stylelint-config-standard": "^26.0.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.2",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.10",
+    "bootstrap": "^5.1.3",
     "framer-motion": "^7.1.0",
     "mdx-bundler": "^9.0.1",
     "next": "^12.2.5",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.2.1",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.2.2",
+    "react-icons": "^4.8.0",
+    "react-tsparticles": "^2.12.2",
+    "styled-components": "^6.1.3",
     "three": "^0.146.0",
     "three-stdlib": "^2.18.1"
   },

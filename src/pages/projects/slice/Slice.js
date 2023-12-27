@@ -4,6 +4,7 @@ import sliceAnnotation from 'assets/slice-annotation.png';
 import sliceAppLarge from 'assets/slice-app-large.jpg';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceApp from 'assets/slice-app.jpg';
+
 import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
@@ -40,7 +41,7 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'In-Air Signature';
 const description =
   'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
 const roles = ['User Research', 'UX Design', 'Interface Design'];
