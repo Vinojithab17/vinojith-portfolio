@@ -19,6 +19,8 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 import AirSig from 'assets/AirSig.png';
 import RowAndColumnSpacing from './Grid';
+import { ImprovedNoise } from 'three-stdlib';
+import Roster from 'assets/RosterS.png';
 
 const disciplines = ['Developer', 'UoM', 'Engineer'];
 
@@ -117,7 +119,7 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sprTexture, AirSig],
+              srcSet: [Roster, Roster],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -144,14 +146,14 @@ export const Home = () => {
         index={3}
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        // buttonText="View project"
+        // buttonLink="/projects/slice"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [sliceTexture, sliceTextureLarge],
+              srcSet: [sliceTexture, AirSig],
               placeholder: sliceTexturePlaceholder,
             },
           ],
